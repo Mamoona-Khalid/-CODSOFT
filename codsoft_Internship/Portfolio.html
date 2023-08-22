@@ -1,0 +1,528 @@
+<html>
+    <head>
+        <title> Portfolio Website</title>
+        <script src="https://kit.fontawesome.com/6d94b5bca8.js" crossorigin="anonymous"></script>
+<link href="../boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="../boostrap/js/jquery-3.2.1.min.js"></script>
+	<script src="./boostrap/js/bootstrap.min.js"></script>       
+	<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+  @font-face {
+    font-family: 'Aileron';
+    src: url("Precious.ttf") format("opentype")
+  }
+
+  .header{
+    background-color:#202020;
+    color:beige;
+    width: 101.1%;
+  }
+  .header h2{
+font-family: 'Aileron'; 
+font-size:50;
+}
+ .mynav{
+    font-size:16px;
+   margin-top:12;
+    
+ }
+ .mynav ul li a{
+    color: white;
+    font-weight:600;
+
+
+ }
+ .mynav ul li a:hover{
+    text-decoration: none;
+    background-color:  #08d665;
+    background-size: cover;
+    padding: 4px;
+ }
+ .container{
+    background-color:#36454F;
+ }
+ .intro{
+    background-color: 	#343434;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 101.1%;
+ }
+ .intro p {
+    margin-left: 60;
+    font-size: 17px;;
+ }
+ .intro h2{
+    margin-left:60;
+    font-size: 35px;
+ }
+ .intro h2 i{
+    padding: 5px;
+ }
+ .intro h2 i:hover{
+    cursor:pointer;
+    background-color: #08d665;
+    border-radius: 50%;
+    padding:10px;
+ }
+ .intro button{
+    margin-left: 60;
+    background-color: forestgreen;
+    font-weight:bold;
+    border-color: #202020;
+ }
+ .intro button:hover{
+    background-color: forestgreen;
+ }
+ .intro button:active{
+    background-color: purple;
+ }
+ .container{
+    width: 100%;
+    height:auto;
+    background-color: black;
+ }
+ .about{
+    color: white;
+    margin-left:170;
+    margin-top: 23;
+ }
+ .about p{
+    font-size:15px;
+ }
+ .skills{
+    background-color:#202020;
+    color:white;
+    width: 101.1%;
+    height: 460px;
+ }
+ .sub-skill{
+    margin-left: 70;
+ }
+ .sub-skill2{
+    margin-left:60;
+    margin-top:6;
+ }
+ .sub-skill3{
+    margin-left: -50;
+    margin-top:5;
+ }
+ .sub-skill progress {
+   width: 300px;
+   height : 15px;
+   border: 2px gray;
+   margin-top: 10;
+   
+}
+.sub-skill2 progress {
+   width: 280px;
+   height : 15px;
+   border: 2px gray;
+   margin-top: 10;
+   
+}
+.sub-skill3 progress {
+   width: 280px;
+   height : 15px;
+   border: 2px gray;
+   margin-top: 10;
+
+   
+}
+
+progress::-webkit-progress-bar {
+   background-color: black;
+ }
+ progress::-webkit-progress-value {
+         background-color: green;
+ }
+.skills h5{
+    font-size:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+.projects{
+    background-color: black;
+    width:101.1%;
+    height:90%;
+}
+.sub-project{
+    margin-left: 70;
+}
+.thumbnail{
+    background-color: #202020;
+    width: 300;
+    height:360;
+}
+.caption h4 {
+    color:white;
+    font-weight: bold;
+}
+.caption p{
+    color:white;
+    background-color: gray;
+    padding: 11px;
+}
+.sub2{
+    margin-left:60;
+}
+.resume{
+    width:101.1%;
+    background-color:#2f4f4f;
+    color:white;
+    height: 98%;
+}
+.sub-resume{
+    margin-left:60px;
+}
+.list{
+    display: block;
+    padding-inline-end: 30px;
+    font-size:16px;
+}
+#btn{
+    background-color: forestgreen;
+    margin-left:290;
+    margin-top: 60;
+    border:#202020;
+    padding:10px;
+}
+#btn a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+.contact{
+    width:101.1%;
+    background-color: black;
+    color:white;
+    height: 150%;
+}
+.c1{
+    margin-left:60px;
+    margin-top: 30;
+}
+.info-box{
+    background-color: 	#023020;
+    width: 70%;
+    text-align: center;
+    height:30%;
+    margin-left:70px;
+    
+}
+.info-box h2{
+    font-size: 35px;
+}
+.info-box h1{
+    margin-top:-30;
+
+}
+.info-box h2 i{
+    padding:5px;
+}
+.info-box h2 i:hover{
+    cursor:pointer;
+
+}
+.c2{
+    margin-top: 140;
+}
+.c3{
+    margin-top: 140;
+}
+.info-box2{
+    background-color: 	#023020;
+    width: 90%;
+    text-align: center;
+    height:30%;
+    
+} 
+.info-box3{
+    background-color:#023020;
+    width: 90%;
+    text-align: center;
+    height:30%;
+    margin-left:30px;   
+}
+.msg-box{
+    background-color:#023020;
+    width: 100%;
+    text-align: center;
+    height:45%;
+    margin-left:330px;
+    margin-top:25px;
+} 
+.msg-box button{
+    background-color: #03C03C; 
+    color:white; 
+    font-weight: bold;
+    border-color: #023020;
+    margin-top: 30px;
+    width:100px;
+    font-size:16px;
+}
+.msg-box button:hover{
+    background-color: #03C03C;
+}
+.footer{
+    width:101.1%;
+    background-color:#343434;
+    color:white;
+    height: 35%;
+    
+}
+.f1{
+    margin-left:390px;
+}
+.mynav2{
+    font-size:16px;
+   margin-top:8;
+   margin-left:45px;
+    
+ }
+ .mynav2 ul li a{
+    color:#08d665;
+    font-weight:600;
+ }
+ .footer h3{
+font-family: 'Aileron'; 
+font-size:50;
+margin-top:40px;
+ }
+    </style>
+    </head>
+    <body>
+        <div class=" header row">
+            <div class="col-md-3">
+                <h2 style="margin-left: 50;"> <b>Mamoona</b> </h2>
+            </div>
+            <div class="col-md-8">
+                <nav class="mynav">
+                    <ul class="nav navbar-nav navbar-right mynav">
+                        <li> <a href="#"> Skills </a></li>
+                        <li> <a href="#"> Projects </a></li>
+                        <li> <a href="#"> Achievements </a></li>
+                        <li> <a href="#"> Blogs </a></li>
+                        <li> <a href="#"> Resume </a></li>
+                        <li> <a href="#"> Contact Me </a></li>
+                        <li> <a href="#"> About Me </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+            <div class="intro row">
+                <div class="col-md-6">
+                <h1 style="color:white; font-size:45; margin-left: 60; margin-top: 60; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b> Hi all I'm <span style="color: #08d665;">Mamoona Khalid</span></b></h1>
+                <p style="color:white;"> An enthusiastic <span style="color: #08d665;"> MERN Stack Developer</span> well-versed in crafting web <br>applications using JavaScript, ReactJS, Node.js, and various <br> frameworks.
+                <h2 style="color:white;"> <i class="fa-brands fa-facebook-f" style="color: #2d69d2;"></i> 
+                    <i class="fa-brands fa-github"> </i> <i class="fa-brands fa-linkedin-in" style="color: #0f58d7;"></i>
+                 <i class="fa-brands fa-google" style="color: #ea1f33;"></i>  <i class="fa-brands fa-twitter" style="color: #135bd8;"></i>
+                 <i class="fa-regular fa-envelope" style="color: #f4152b;"></i> </h2>
+                 <br>
+                 <a href="Portfolio.html#cm"> <button class="btn btn-info">CONTACT ME</button> </a>
+
+                    <a href="Portfolio.html#rs">  <button class="btn btn-info">SEE MY RESUME</button> </a>
+                </div>
+               
+                <div class="col-md-3 col-xs-offset-1">
+                    <img src="images/p4.jpg" width="550" height="400">
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-4">
+                    <img src="images/mern.png" width="500 height="400">
+                </div> 
+                <div class=" about col-md-6">
+                    <h2><b> Full-Stack Web Developer with a Passion for <span style="color:#08d665">MERN</span></b></h2>
+                    <br>
+                    <p> I'm a dedicated full-stack web developer who likes crafting dynamic and engaging web applications. With a strong 
+                    foundation in JavaScript, React, and Node.js, I've built a diverse range of projects that showcase my skills in 
+                    creating seamless user experiences and robust backend functionality. Whether it's designing interactive interfaces 
+                    or optimizing server performance, I'm always eager to take on new challenges in the ever-evolving world of web 
+                    development. Let's collaborate and bring your digital ideas to life!</p>
+                </div>
+            </div>
+            <div class="skills row">
+                <br>
+                <div class=" sub-skill col-md-3">
+                    <h1 style="color:#08d665; font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif"> MY SKILLS</h1>
+                    <br>
+                    <h5>HTML</h5>
+                    <progress id="html" value="100" max="100">100% </progress> <p>100%</p> <br>
+                    <h5>CSS</h5>
+                    <progress id="html" value="90" max="100">90% </progress> <p>90%</p><br>
+                    <h5>JAVASCRIPT</h5>
+                    <progress id="html" value="80" max="100">80% </progress> <p>80%</p>
+                </div>
+                <div class="sub-skill2 col-md-4">
+                    <br> <br> <br> <br>
+                    <h5>REACT JS</h5>
+                    <progress id="html" value="50" max="100"> 50% </progress> <p>50%</p> <br>
+                    <h5>NODE JS</h5>
+                    <progress id="html" value="30" max="100">30% </progress> <p>30%</p> <br>
+                    <h5>CONTENT WRITING</h5>
+                    <progress id="html" value="98" max="100">98% </progress> <p>98%</p>
+                </div>
+
+                <div class="sub-skill3 col-md-4">
+                    <br> <br> <br> <br>
+                    <h5>PHP</h5>
+                    <progress id="html" value="70" max="100">70% </progress> <p>70%</p> <br>
+                    <h5>SEO</h5>
+                    <progress id="html" value="75" max="100">75% </progress> <p>75%</p> <br>
+                    <h5>WEB DESIGN</h5>
+                    <progress id="html" value="90" max="100">90% </progress> <p>90%</p>
+                </div>
+               </div>
+
+               <div class="projects row">
+                <div class="sub-project col-xs-3">
+                    <h1 style="color:#08d665; font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif"> MY PROJECTS</h1>
+                   <br> <br>
+                    <div class="thumbnail">
+                        <img src="images/portall.jpg" style="height: 180px; width: 300px; ">
+
+                        <div class="caption">
+                           <center><h4 syle="margin-top:-20;">Student Portal</h4></center> 
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sub2 col-xs-3">
+                    <br> <br> <br> <br> <br>
+                    <div class="thumbnail" style="margin-top:10;">
+                        <img src="images/ecommerce.png" width="290" height="460">
+                        <div class="caption">
+                          <center> <h4>E-commerce</h4></center> 
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sub2 col-xs-3">
+                    <br> <br> <br> <br> <br>
+                    <div class="thumbnail" style="margin-top:10">
+                        <img src="images/hotel.jpg" width="330" height="440">
+                        <div class="caption">
+                            <center><h4>Restaurant</h4></center>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+
+                </div>
+               </div>
+
+               <div class="resume row" id="rs">
+                <div class="sub-resume col-xs-6">
+                    <h1 style="color:#08d665; font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif"> MY RESUME</h1>
+                    <h3> <b>Summary </b>  </h3> <hr style="margin-right: 210; margin-top: -20; margin-left:130;">
+                    <p style="margin-right:220px; font-size:16px;"> My primary objective is to contribute to the development of high-quality software solutions by applying my 
+                        technical skills and knowledge gained. I acquired knowledge in software development, including programming, databases, and networking. I also developed skills in problem-solving,
+                         critical thinking, and teamwork. </p>
+
+                    <h3><b>Education</b></h3>  <hr style="margin-right: 240; margin-top: -20; margin-left:130;">
+                    <h4 style="color:#03C03C;">  2014-2016</p> </h4>
+                    <p> <b> Matriculation- Pakistan Urdu School, Bahrain <span style="color:#03C03C;">(86%)</span> </b></p> <br>
+
+                    <h4 style="color:#03C03C;">2016-2018</h4>
+                    <p><b> Intermediate (ICS) – Pakistan Urdu School, Bahrain <span style="color: #03C03C;">(80%)</span> </b></p> <br>
+
+                    <h4 style="color: #03C03C;"> 2019-2023</h4>
+                    <p><b> BS IT – Lahore Garrison University <span style="color: #03C03C;">(3.77 CGPA) </span> </b></p>
+
+                </div>
+                <div class="sub-resume2 col-xs-5">
+                <h3 style="margin-top:80;"><b>Certifications</b></h3>  <hr style=" margin-right: 70; margin-top: -20; margin-left:170;">
+                <ul class="list">
+                    <li> Distinction in Computer Science - 9th class - Federal Board</li> 
+                    <li> Secured first position in 1st year - Federal Board</li>
+                    <li> Secured first position in 2nd year - Federal Board </li>
+                    <li> Secured first postion in 5th, 6th and 7th semesters</li>
+                    <li> Graphic Designing - Digiskills.pk</li>
+                    <li> HTML, CSS and Javascript - Coursera</li>
+                    <li> Search Engine Optimization - Coursera</li>
+                    
+                </ul>
+                <h3><b>Publication</b></h3>  <hr style="margin-right: 70; margin-top: -20; margin-left:150;">
+
+                <p style="margin-right:60px; font-size:16px;"> Collaborated closely with my teacher in making significant contributions to the publication of a research paper
+                    <span style="color:#03C03C">"Biometric Attendance Techniques in COVID-19: A Review</span>
+                    in [LGU International Journal for Electronic Crime Investigation]. 
+                    Actively participated in writing and revising the manuscript, ensuring the quality and accuracy of the research work. </p>
+
+                    
+               <button id="btn" class="btn btn-info">  <a href = "https://drive.google.com/uc?export=download&id=10YcMMOP_LD6aeCUgKJ2e09QOBJO-Uh6N">Download Resume in PDF</a> </button>
+               </div>
+               </div>
+                <div class="contact row" id="cm">
+                <div class="c1 col-md-4">
+                    <h1 style="font-weight: bold; color:#08d665; font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif">Reach Out to me!</h1>
+                    <br> <br> <div class="info-box">
+                        <br> <br>
+                        <h3 style="font-weight: bold;"> <i class="fa-solid fa-share-nodes fa-spin fa-spin-reverse" style="color: blue; font-size:30px;"></i> Social Links</h3> <br> <br>
+                        <h2 style="color:white; font-size:25px;"> <i class="fa-brands fa-facebook-f" style="color: #2d69d2;"></i> 
+                            <i class="fa-brands fa-github"> </i> <i class="fa-brands fa-linkedin-in" style="color: #0f58d7;"></i>
+                         <i class="fa-brands fa-google" style="color: #ea1f33;"></i>  <i class="fa-brands fa-twitter" style="color: #135bd8;"></i>
+                         <i class="fa-regular fa-envelope" style="color: #f4152b;"></i> </h2>
+                         </div>
+                         </div>
+                    <div class="c2 col-md-3">
+                        <div class=" info-box2">
+                            <br> <br> 
+                            <h3 style="font-weight: bold;"><i class="fa-solid fa-phone fa-fade" style="color: orange; font-size: 30px;"> </i> Contact Number</h3>
+                           <br> <br> <br>  <h4 style="color:white;">+123456789 </h4>
+                           </div>
+                        </div>
+                        <div class=" c3 col-md-3">
+                            <div class="info-box3">
+                                <br> <br> <h3 style="font-weight: bold;"> <i class="fa-solid fa-envelope fa-bounce" style="color:red; font-size: 30px;"></i> Email</h3>
+                                 <br> <br> <br> <h4 style="color:white;">mamoonakhalid9@gmail.com</h4>
+                             </div>
+                        </div>  
+                        <div class="col-md-6">
+                        <div class="msg-box">
+                            <br> 
+                            <h3 style="font-weight:bold; color:white;"> <i class="fa-solid fa-paper-plane fa-beat-fade" style="color:aqua; font-size: 30px;"></i> Message Me</h3>
+                            <form >
+                             <br> <br>
+                             <div class="col-md-6">
+                                <input type="text" placeholder="Name" class="form-control form-group" style="width: 75%; margin-left:50px;">
+                                </div>
+                    <div class="col-md-6">
+                        <input type="email" placeholder="Email" class="form-control form-group" style="width: 75%; margin-left:20px;">
+
+                    </div>
+                             <input type="text" placeholder="Subject" class="form-control form-group" style="width: 79%; margin-left:64px;">
+                       <textarea class="form-control" rows="5" placeholder="Message" style="width: 79%; margin-left:64px;"> </textarea>
+                       <button class="btn btn-info">Send</button>
+
+                        </form>
+                        </div>
+                        </div>
+                             
+                </div>
+                    <div class="footer row">
+                        <div class=" f1 col-md-6">
+                            <center><h3>Mamoona</h3></center>
+                            <nav class="mynav2">
+                                <ul class="nav navbar-nav mynav2">
+                                    <li> <a href="#"> Skills </a></li>
+                                    <li> <a href="#"> Projects </a></li>
+                                    <li> <a href="#"> Achievements </a></li>
+                                    <li> <a href="#"> Blogs </a></li>
+                                    <li> <a href="#"> Resume </a></li>
+                                    </ul>
+                                    </nav> 
+                                    <br> <br> <br>
+
+                        <center> <h6> <span>&copy;</span> COPYRIGHT 2023 - ALL RIGHT RESERVED</h6> </center> 
+
+                        </div>
+                    </div>
+    </body>
+</html>
